@@ -9,14 +9,21 @@ body {
 
 h1 {
   font-weight: 900;
-  font-size: 70px;
+  font-size: 4rem;
   margin: 0.5em 0;
 }
+
+@media only screen and (max-device-width: 812px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h1 span {
   text-shadow: 0px 1px 2px #394639;
   color: #3e743e;
 }
 
 a {
-    color: white;
+  color: white;
 }
