@@ -1,0 +1,73 @@
+/* Prism.js theme — dark green to match site palette */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #d5ddd5;
+  text-shadow: none;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  hyphens: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6e9a6e;
+}
+
+.token.punctuation {
+  color: #a5bda5;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f97583;
+}
+
+.token.boolean,
+.token.number {
+  color: #79b8ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #85e89d;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string {
+  color: #d5ddd5;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #b392f0;
+}
+
+.token.function,
+.token.class-name {
+  color: #e1e4e8;
+  font-weight: 500;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ffab70;
+}
