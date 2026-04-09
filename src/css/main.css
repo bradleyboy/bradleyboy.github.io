@@ -16,10 +16,11 @@ body, html {
 body {
   font-family: Montserrat, Helvetica, sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 main {
-  padding-bottom: 4rem;
+  padding-bottom: 0;
 }
 
 code, pre, kbd, samp {
@@ -47,7 +48,8 @@ code, pre, kbd, samp {
 
 /* Site theme */
 body {
-  background: #336633;
+  background-color: #336633;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjxmZUNvbG9yTWF0cml4IHR5cGU9InNhdHVyYXRlIiB2YWx1ZXM9IjAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjA2Ii8+PC9zdmc+");
   color: #d5ddd5;
   font-weight: 300;
   text-shadow: 0px 1px 2px #2e382e;
@@ -78,15 +80,34 @@ h1 {
 
 a {
   color: white;
+  text-decoration-color: #5a8a5a;
+  text-underline-offset: 0.15em;
 }
 
 a:hover {
   color: #85e89d;
+  text-decoration-color: #85e89d;
 }
 
 a:focus-visible {
   outline: 2px solid #85e89d;
   outline-offset: 2px;
+}
+
+/* Writings section on homepage */
+.writings-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #4a6a4a;
+}
+
+.writings-section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c5ddc5;
+  margin: 0 0 1.5rem;
 }
 
 /* Blog listing */
@@ -106,13 +127,26 @@ a:focus-visible {
 
 .blog-list time {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  color: #c5ddc5;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.blog-list-description {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.95rem;
   color: #a5bda5;
+  margin: 0.4rem 0 0;
+  line-height: 1.6;
 }
 
 /* Post */
 .post-nav {
   margin-top: 2rem;
+  margin-bottom: -0.25rem;
 }
 
 .post-nav a {
@@ -133,6 +167,35 @@ a:focus-visible {
   margin-bottom: 0.25rem;
 }
 
+.post-footer {
+  position: relative;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #4a6a4a;
+}
+
+.post-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-50vw);
+  width: 200vw;
+  height: 100%;
+  background: #295229;
+  z-index: -1;
+}
+
+.post-footer a {
+  font-size: 0.875rem;
+  color: #a5bda5;
+  text-decoration: none;
+}
+
+.post-footer a:hover {
+  color: white;
+}
+
 .post-header time {
   font-size: 0.8rem;
   color: #c5ddc5;
@@ -144,6 +207,7 @@ a:focus-visible {
 .post-content {
   max-width: 42rem;
   text-shadow: none;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .post-content p {
@@ -153,15 +217,19 @@ a:focus-visible {
 }
 
 .post-content h2 {
+  font-family: Montserrat, Helvetica, sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .post-content h3 {
+  font-family: Montserrat, Helvetica, sans-serif;
   font-size: 1.375rem;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .post-content :not(pre) > code {
@@ -191,12 +259,73 @@ a:focus-visible {
 .post-content ul,
 .post-content ol {
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
 }
 
+.post-content sup a,
+.post-content .footnote-ref a {
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 0.7em;
+  color: #a5bda5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-content sup a:hover,
+.post-content .footnote-ref a:hover {
+  color: #85e89d;
+}
+
+.post-content hr {
+  display: none;
+}
+
+.post-content .footnotes {
+  position: relative;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #4a6a4a;
+  font-size: 0.9rem;
+  color: #a5bda5;
+  padding-bottom: 2rem;
+}
+
+.post-content .footnotes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-50vw);
+  width: 200vw;
+  height: 100%;
+  background: #2e5c2e;
+  z-index: -1;
+}
+
+.post-content .footnotes ol {
+  font-size: 0.9rem;
+}
+
+.post-content .footnotes ol::before {
+  content: "Footnotes";
+  display: block;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d5ddd5;
+  margin-bottom: 0.75rem;
+  margin-left: -1.5rem;
+}
+
+.post-content .footnotes p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .post-content blockquote {
-  border-left: 3px solid #a5bda5;
+  border-left: 4px solid #85e89d;
   margin-left: 0;
   padding-left: 1.25rem;
   color: #a5bda5;

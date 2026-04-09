@@ -12,12 +12,15 @@ title: bradleyboy.com
 
 <p>You can find me on <a href="https://twitter.com/bradleyboy">Twitter</a>, <a href="https://github.com/bradleyboy">GitHub</a>, and <a href="https://linkedin.com/in/bradleyboy">LinkedIn</a>.</p>
 
-<h2>Writings</h2>
-<ul class="blog-list">
-  {%- for post in collections.posts | reverse %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-    </li>
-  {%- endfor %}
-</ul>
+<div class="writings-section">
+  <h2>Writings</h2>
+  <ul class="blog-list">
+    {%- for post in collections.posts | reverse %}
+      <li>
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        {% if post.data.description %}<p class="blog-list-description">{{ post.data.description }}</p>{% endif %}
+      </li>
+    {%- endfor %}
+  </ul>
+</div>
