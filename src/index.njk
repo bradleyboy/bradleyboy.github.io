@@ -2,12 +2,22 @@
 layout: layouts/home.njk
 title: bradleyboy.com
 ---
-<h1>
-    Hi, I'm Brad<span>leyboy.</span>
-</h1>
+<div class="hero">
+    <h1>
+        Hi, I'm Brad<span>leyboy.</span>
+    </h1>
+</div>
 
 <p>I live in Brooklyn, NY, and work as a Software Engineer at <a href="https://stripe.com">Stripe</a>.</p>
 
 <p>You can find me on <a href="https://twitter.com/bradleyboy">Twitter</a>, <a href="https://github.com/bradleyboy">GitHub</a>, and <a href="https://linkedin.com/in/bradleyboy">LinkedIn</a>.</p>
 
-<p><a href="/blog/">Blog</a></p>
+<h2>Writings</h2>
+<ul class="blog-list">
+  {%- for post in collections.posts | reverse %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    </li>
+  {%- endfor %}
+</ul>
