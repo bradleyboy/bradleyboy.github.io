@@ -330,6 +330,7 @@ a:focus-visible {
   padding-left: 1.25rem;
   color: #a5bda5;
   text-shadow: none;
+  line-height: 1.8;
 }
 
 .post-content blockquote header {
@@ -343,4 +344,6 @@ a:focus-visible {
 
 .post-content img {
   max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
