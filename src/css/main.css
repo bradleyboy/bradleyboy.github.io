@@ -330,6 +330,10 @@ a:focus-visible {
   margin-left: -1.25rem;
 }
 
+.post-content .footnotes li:target {
+  color: #d5ddd5;
+}
+
 .post-content .footnotes p {
   font-size: 0.9rem;
   line-height: 1.6;
