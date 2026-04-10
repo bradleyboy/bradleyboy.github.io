@@ -270,6 +270,14 @@ a:focus-visible {
   line-height: 1.8;
 }
 
+.post-content .footnote-ref a[id] {
+  scroll-margin-top: 4rem;
+}
+
+.post-content .footnotes li {
+  scroll-margin-top: 2rem;
+}
+
 .post-content sup a,
 .post-content .footnote-ref a {
   font-family: Montserrat, Helvetica, sans-serif;
