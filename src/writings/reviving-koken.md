@@ -167,7 +167,7 @@ After looking through the admin panel, I was excited to see the published site. 
 
 _Sebastian Pinehurst_
 
-This was the fake photography persona that we published the development version of Koken under, and I immediately fired off an email to Todd. Subject line:
+This was the fake photographer persona that we published the development version of Koken under, and I immediately fired off an email to Todd. Subject line:
 
 _Sebastian Pinehurst lives_
 
@@ -179,7 +179,7 @@ I spent what felt like another hour clicking around and rediscovering Koken. Nos
 
 ## Postlude
 
-All of this, from the start of the repo exploration, until I fired off that email to Todd, happened within the span of about 1 hour. Claude had picked Koken off the floor, barely alive, and breathed new life into it. It was nostalgic, but it also felt empty in a way I didn't expect.
+All of this — from the start of the repo exploration, until I fired off that email to Todd — happened within the span of about 1 hour. Claude had picked Koken off the floor, barely alive, and breathed new life into it. It was nostalgic, but it also felt empty in a way I didn't expect.
 
 Building something like this is _hard work_, and we often obsessed over small details to get them just right, or spent days debugging a thorny issue. The valleys in this work can be dark, frustrating, hopeless. But that is also the hook: when you land just the right detail, find the needle-in-the-haystack cause of a bug, the rush is irreplaceable.
 
