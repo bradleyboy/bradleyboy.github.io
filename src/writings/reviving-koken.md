@@ -4,7 +4,7 @@ date: 2026-04-09
 description: AI brought my old project back to life in an hour. I'm still not sure how to feel about it.
 ---
 
-In another tech-life, I helped run a small software shop with designer/developer Todd Dominey. Out of that shop came a few products. First was [SlideShowPro](http://slideshowpro.com), a flash-based slideshow system with an accompanying CMS (SlideShowPro Director). SlideShowPro was a commercial hit and used all over the web at the time. But it was tied to Flash, and the surge of mobile browsers with their lack of Flash support induced a slow death starting with the initial release of the iPad in 2010 [^1].
+In another tech-life, I helped run a small software shop with designer/developer Todd Dominey. Out of that shop came a few products. First was [SlideShowPro](http://slideshowpro.com), a Flash-based slideshow system with an accompanying CMS (SlideShowPro Director). SlideShowPro was a commercial hit and used all over the web at the time. But it was tied to Flash, and the surge of mobile browsers with their lack of Flash support induced a slow death starting with the initial release of the iPad in 2010 [^1].
 
 [^1]: Although we did stem the tide a bit with the introduction of [SlideShowPro Mobile](https://web.archive.org/web/20141202182620/http://slideshowpro.net/news/archive/2010/07/announcing-slideshowpro-mobile.php/), but that's a story for another time.
 
@@ -104,7 +104,7 @@ Here's what the commit activity looked like over the years, easy to spot our col
 
 Our release process used git tags, which also allowed me to visualize the release timeline. The first alpha release of Koken was cut in July of 2012. Koken's last tag (`0.22.24`) was released in August of 2017, never reaching 1.0.
 
-Koken's tech stack is a time capsule of that period. Notably, Koken was self-hosted, and built to run on any run-of-the-mill shared PHP host, of which there were many at the time [^3]. 
+Koken's tech stack is a time capsule of that period. Notably, Koken was self-hosted, and built to work on any run-of-the-mill shared PHP host, of which there were many at the time [^3].
 
 [^3]: I could devote a separate post for all the wacky things I found these shared hosts doing over the years.
 
