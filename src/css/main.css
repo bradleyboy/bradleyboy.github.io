@@ -304,6 +304,7 @@ a:focus-visible {
 
 .post-content .footnotes ol {
   font-size: 0.9rem;
+  padding-left: 1.25rem;
 }
 
 .post-content .footnotes ol::before {
@@ -316,7 +317,7 @@ a:focus-visible {
   text-transform: uppercase;
   color: #d5ddd5;
   margin-bottom: 0.75rem;
-  margin-left: -1.5rem;
+  margin-left: -1.25rem;
 }
 
 .post-content .footnotes p {
