@@ -134,7 +134,7 @@ It made no mention of a build step for the JavaScript, which seemed wrong. Turns
 
 ## What's the worst that could happen?
 
-So, with tokens from my subscription burning a hole in my pocket, I told Claude to go for it. I had `--dangerously-skip-permissions` on — a Claude option that doesn't ask for your approval at each step — so it churned for a bit while I got on with my Saturday. I checked back in after 15 minutes or so and was surprised to see it had confidently arrived at a half-working installation (according to Claude, just the administration panel was functional, the published Koken site was not). It hit a few Docker bumps along the way, but self-corrected immediately each time. And it _did_ work. I could see the admin login screen in my browser, but couldn't login.
+So, with tokens from my subscription burning a hole in my pocket, I told Claude to go for it. I had `--dangerously-skip-permissions` on — a Claude option that doesn't ask for your approval at each step — so it churned for a bit while I got on with my Saturday. I checked back in after 15 minutes or so and was surprised to see it had confidently arrived at a half-working installation (according to Claude, just the administration panel was functional, the site that Koken published from your data was not). It hit a few Docker bumps along the way, but self-corrected immediately each time. And it _did_ work. I could see the admin login screen in my browser, but couldn't login.
 
 Claude was prompting me to "run the installer", but I knew we had a different way of installing in development. I nudged Claude in that direction, and it found a `gulp reset` task we used in the now defunct Vagrant workflow, then ported the whole thing to a Docker-compatible script in one pass.
 
@@ -163,7 +163,7 @@ This is a reasonable fix, and probably something we should have done way back wh
 
 ## It's alive
 
-After looking through the admin panel, I was excited to see the published site. Earlier, Claude had flagged the published site as broken. It turned out to be a similar loopback issue — our previous fixes also applied here. I opened the published site and the default theme loaded just as it was designed over a decade ago. The name of the site caught my eye.
+After looking through the admin panel, I was excited to see the published site. Earlier, Claude had flagged that this part as broken. It turned out to be a similar loopback issue — our previous fixes also applied here. I opened the published site and the default theme loaded just as it was designed over a decade ago. The name of the site caught my eye.
 
 _Sebastian Pinehurst_
 
