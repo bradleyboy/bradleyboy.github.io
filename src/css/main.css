@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -179,8 +183,11 @@ a:focus-visible {
   content: "";
   position: absolute;
   top: 0;
-  left: calc(-50vw);
-  width: 200vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   height: 100%;
   background: #295229;
   z-index: -1;
@@ -295,8 +302,11 @@ a:focus-visible {
   content: "";
   position: absolute;
   top: 0;
-  left: calc(-50vw);
-  width: 200vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   height: 100%;
   background: #2e5c2e;
   z-index: -1;
