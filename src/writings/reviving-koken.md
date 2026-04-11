@@ -10,7 +10,7 @@ In another tech-life, I helped run a small software shop with designer/developer
 
 On the heels of SlideShowPro, developer Lauren Smith joined us and we created [Koken](https://koken.me), a self-hosted, website publishing system for photographers. While Koken never reached the same commercial success as SlideShowPro, it is still the project in my career I am most proud of. That pride is rooted in all we had to invent along the way: a custom templating language, our own SPA framework, over-the-wire updates, a [store](https://web.archive.org/web/20201112021654/http://blog.koken.me/essays/2014/02/koken-store-sneak-preview/) for themes and plugins, to name a few. And it was all housed in a UI that was as intentional as it was beautiful.
 
-Sadly, we ran out of gas (both emotionally and financially) and sold Koken to another company in 2015. That company tried to push forward for a few years, but eventually disappeared, and Todd and I started hearing from users a few years later that their installs of Koken were breaking down. We tried to work out an arrangement with the new owner to take over and prop it back up, but lost contact again. Koken's stability continued to decay and it gently eased over the internet horizon as the years passed.
+Sadly, we ran out of gas (both emotionally and financially) and sold Koken to another company in 2015. That company pushed forward for a few years, but ultimately disappeared, and Todd and I eventually started hearing from users that their installs of Koken were breaking down. We tried to work out an arrangement with the new owner to take over and prop it back up, but lost contact again. Koken's stability continued to decay and it gently eased over the internet horizon as the years passed.
 
 The thought of trying to revive Koken was always daunting to me, who knows how long it would take to fix the years of neglect. But recently, with the emergence of AI tooling, my curiosity got the best of me.
 
@@ -163,7 +163,7 @@ This is a reasonable fix, and probably something we should have done way back wh
 
 ## It's alive
 
-After looking through the admin panel, I was excited to see the published site. Earlier, Claude had flagged that this part as broken. It turned out to be a similar loopback issue — our previous fixes also applied here. I opened the published site and the default theme loaded just as it was designed over a decade ago. The name of the site caught my eye.
+After looking through the admin panel, I was excited to see the published site. Earlier, Claude had flagged this part as broken. It turned out to be a similar loopback issue — our previous fixes also applied here. I opened the published site and the default theme loaded just as it was designed over a decade ago. The name of the site caught my eye.
 
 _Sebastian Pinehurst_
 
