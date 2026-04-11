@@ -3,24 +3,16 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body, html {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
-  left: 0;
-  top: 0;
   font-size: 100%;
 }
 
 body {
   font-family: Montserrat, Helvetica, sans-serif;
   line-height: 1.5;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 main {
