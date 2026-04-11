@@ -97,20 +97,101 @@ a:focus-visible {
   margin-right: auto;
 }
 
-/* Writings section on homepage */
-.writings-section {
+/* Homepage sections */
+.home-section {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #4a6a4a;
 }
 
-.writings-section h2 {
+.home-section h2 {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #c5ddc5;
   margin: 0 0 1.5rem;
+}
+
+.work-list {
+  list-style: none;
+  padding: 0;
+}
+
+.work-list li {
+  margin-bottom: 1.5rem;
+}
+
+.work-list time {
+  display: block;
+  font-size: 0.8rem;
+  color: #c5ddc5;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.work-list .work-company {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #d5ddd5;
+}
+
+.work-list .work-title {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: #a5bda5;
+  margin-top: 0.2rem;
+}
+
+.home-section.elsewhere {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.home-section.elsewhere::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  background: #2e5c2e;
+  z-index: -1;
+}
+
+.elsewhere-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elsewhere-list li {
+  margin-bottom: 0.5rem;
+}
+
+.elsewhere-list a {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.home-footer {
+  margin-top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #4a6a4a;
+  background: #295229;
+}
+
+.home-footer .container {
+  max-width: 42rem;
+}
+
+.home-footer p {
+  font-size: 0.875rem;
+  color: #a5bda5;
+  margin: 0;
 }
 
 /* Blog listing */

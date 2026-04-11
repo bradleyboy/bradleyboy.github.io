@@ -10,9 +10,7 @@ title: bradleyboy.com
 
 <p>I live in Brooklyn, NY, and work as a Software Engineer at <a href="https://stripe.com">Stripe</a>.</p>
 
-<p>You can find me on <a href="https://twitter.com/bradleyboy">Twitter</a>, <a href="https://github.com/bradleyboy">GitHub</a>, and <a href="https://linkedin.com/in/bradleyboy">LinkedIn</a>.</p>
-
-<div class="writings-section">
+<div class="home-section">
   <h2>Writings</h2>
   <ul class="blog-list">
     {%- for post in collections.posts | reverse %}
@@ -22,5 +20,40 @@ title: bradleyboy.com
         {% if post.data.description %}<p class="blog-list-description">{{ post.data.description }}</p>{% endif %}
       </li>
     {%- endfor %}
+  </ul>
+</div>
+
+<div class="home-section">
+  <h2>Work</h2>
+  <ul class="work-list">
+    <li>
+      <time>August 2021 – Present</time>
+      <div class="work-company">Stripe</div>
+      <div class="work-title">Staff Software Engineer</div>
+    </li>
+    <li>
+      <time>September 2017 – August 2021</time>
+      <div class="work-company">Mailchimp</div>
+      <div class="work-title">Principal Software Engineer</div>
+    </li>
+    <li>
+      <time>July 2015 – August 2017</time>
+      <div class="work-company">Etsy</div>
+      <div class="work-title">Staff Software Engineer</div>
+    </li>
+    <li>
+      <time>February 2005 – May 2015</time>
+      <div class="work-company">Koken / SlideShowPro</div>
+      <div class="work-title">Co-Founder / CTO</div>
+    </li>
+  </ul>
+</div>
+
+<div class="home-section elsewhere">
+  <h2>Elsewhere</h2>
+  <ul class="elsewhere-list">
+    <li><a href="https://twitter.com/bradleyboy">Twitter</a></li>
+    <li><a href="https://github.com/bradleyboy">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/bradleyboy">LinkedIn</a></li>
   </ul>
 </div>
