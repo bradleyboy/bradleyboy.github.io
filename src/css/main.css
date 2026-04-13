@@ -16,6 +16,8 @@ body {
 }
 
 main {
+  position: relative;
+  z-index: 0;
   padding-bottom: 0;
   border-top: 6px solid #d5ddd5;
   background-color: #336633;
