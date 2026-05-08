@@ -2,6 +2,8 @@
 title: Reviving Koken
 date: 2026-04-09
 description: AI brought my old project back to life in an hour. I'm still not sure how to feel about it.
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 In another tech-life, I helped run a small software shop with designer/developer Todd Dominey. Out of that shop came a few products. First was [SlideShowPro](http://slideshowpro.com), a Flash-based slideshow system with an accompanying CMS (SlideShowPro Director). SlideShowPro was a commercial hit and used all over the web at the time. But it was tied to Flash, and the surge of mobile browsers with their lack of Flash support induced a slow death starting with the initial release of the iPad in 2010 [^1].
